@@ -84,3 +84,23 @@ eureka:
 
 jwt:
   secret: revjobs2024secretkeyforsecuritypurposesandtokengeneration
+
+springdoc:
+  api-docs:
+    enabled: true
+  swagger-ui:
+    enabled: true
+    path: /swagger-ui.html
+    config-url: /v3/api-docs/swagger-config
+    urls:
+      - name: user-service
+        url: /v3/api-docs/user-service
+      - name: job-service
+        url: /v3/api-docs/job-service
+      - name: application-service
+        url: /v3/api-docs/application-service
+      - name: message-service
+        url: /v3/api-docs/message-service
+      - name: notification-service
+        url: /v3/api-docs/notification-service
+
